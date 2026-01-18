@@ -1,0 +1,8 @@
+DAY 1: Data Cleaning & Validation
+
+Initial dataset loaded
+- Missing values handled using median
+- Duplicate rows removed
+- Data types corrected
+
+Status: Data preprocessing completed successfully

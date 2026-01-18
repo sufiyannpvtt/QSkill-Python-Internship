@@ -1,0 +1,8 @@
+Dear Mentor,
+
+I have completed the assigned internship tasks with proper documentation
+and project structure. Please find the GitHub repository link attached.
+https://github.com/sufiyannpvtt/QSkill-Python-Internship.git
+
+Regards,
+Mohammad Shadullah

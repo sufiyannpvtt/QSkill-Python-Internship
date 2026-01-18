@@ -1,0 +1,10 @@
+Ridge Regression
+MAE: 215275.2517
+RMSE: 292801.9070
+R2: 0.9941
+
+Lasso Regression
+MAE: 250999.1611
+RMSE: 355122.7568
+R2: 0.9914
+

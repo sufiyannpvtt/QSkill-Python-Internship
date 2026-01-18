@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Models & large outputs (optional safety)
+*.pkl
+
+# PDFs (optional – comment if you want to track)
+# *.pdf
+__pycache__/
+.env
+*.pyc
+.ipynb_checkpoints/
+models/*.pkl
