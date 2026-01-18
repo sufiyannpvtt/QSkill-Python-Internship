@@ -1,0 +1,11 @@
+Student_ID,Gender,Study_Hours,Attendance,Internal_Marks,Final_Marks,Assignments_Submitted,Performance_Category
+S001,Male,5.0,82,65,68,7,Average
+S002,Female,7.0,90,78,82,9,Good
+S003,Male,2.0,55,40,45,4,Poor
+S004,Female,6.0,88,72,75,8,Good
+S005,Male,8.0,95,85,90,10,Excellent
+S006,Female,6.0,70,60,62,6,Average
+S007,Male,4.0,60,50,52,5,Average
+S008,Female,9.0,98,88,92,10,Excellent
+S009,Male,1.0,45,35,38,3,Poor
+S010,Female,6.0,85,70,74,8,Good
