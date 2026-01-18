@@ -1,0 +1,11 @@
+Student_ID,Gender,Study_Hours,Attendance,Internal_Marks,Final_Marks,Assignments_Submitted
+S001,Male,5.0,82,65,68,7
+S002,Female,7.0,90,78,82,9
+S003,Male,2.0,55,40,45,4
+S004,Female,6.0,88,72,75,8
+S005,Male,8.0,95,85,90,10
+S006,Female,6.0,70,60,62,6
+S007,Male,4.0,60,50,52,5
+S008,Female,9.0,98,88,92,10
+S009,Male,1.0,45,35,38,3
+S010,Female,6.0,85,70,74,8
