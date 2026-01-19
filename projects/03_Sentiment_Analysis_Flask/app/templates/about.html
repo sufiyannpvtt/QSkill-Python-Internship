@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | AI Sentiment Analysis</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="nav-logo">AI Sentiment</div>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/how-it-works">How It Works</a></li>
+    <li><a href="/api-docs">API</a></li>
+    <li><a href="/about">About</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <h1>About This Project</h1>
+  <p>A complete NLP + Backend project designed for real-world use.</p>
+</section>
+
+<section class="info">
+
+  <div class="info-box">
+    <h3> Tech Stack Usage</h3>
+    <canvas id="techChart"></canvas>
+  </div>
+
+  <div class="info-box">
+    <h3> Project Goals</h3>
+    <p>
+      Build a scalable, explainable AI system
+      suitable for internships and real applications.
+    </p>
+  </div>
+
+  <div class="info-box">
+    <h3> Skill Focus</h3>
+    <p>
+      Backend • NLP • APIs • UX • System Design
+    </p>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p>Built by Shadullah • Internship & Resume Ready</p>
+</footer>
+
+<script>
+new Chart(document.getElementById("techChart"), {
+  type: "radar",
+  data: {
+    labels: ["Flask","NLP","APIs","Frontend","Security"],
+    datasets: [{
+      label: "Skill Coverage",
+      data: [90, 85, 80, 70, 75],
+      backgroundColor: "rgba(56,189,248,0.3)",
+      borderColor: "#38bdf8"
+    }]
+  }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+flask
+flask-limiter
+flask-login
+vaderSentiment
+transformers
+torch
+numpy<2
+requests
+jinja2

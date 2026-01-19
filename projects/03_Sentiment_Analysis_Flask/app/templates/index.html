@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Sentiment Analysis Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo">AI Sentiment</div>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/how-it-works">How It Works</a></li>
+    <li><a href="/api-docs">API</a></li>
+    <li><a href="/about">About</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>AI Sentiment Analysis Platform</h1>
+  <p>
+    A professional NLP-based web application that analyzes text sentiment
+    using modern Machine Learning techniques.
+  </p>
+</section>
+
+<!-- MAIN ANALYSIS -->
+<section class="main">
+  <div class="card">
+    <h2>Analyze Text</h2>
+    <p class="muted">
+      Enter any sentence, product review, feedback, or opinion.
+    </p>
+
+    <textarea id="textInput" placeholder="Type your text here..."></textarea>
+    <button id="analyzeBtn">Analyze Sentiment</button>
+  </div>
+
+  <div class="card result-card">
+    <h2>Analysis Result</h2>
+    <p class="muted">No analysis yet. Submit text to see results.</p>
+  </div>
+</section>
+
+<!-- INFO CARDS -->
+<section class="info">
+  <div class="info-box">
+    <h3>How It Works</h3>
+    <p>
+      Uses NLP techniques like VADER and Transformers to compute sentiment
+      polarity and classify text as Positive, Negative, or Neutral.
+    </p>
+  </div>
+
+  <div class="info-box">
+    <h3>API Access</h3>
+    <p>Integrate sentiment analysis into your app:</p>
+    <code>POST /api/analyze</code>
+  </div>
+
+  <div class="info-box">
+    <h3>Tech Stack</h3>
+    <p>
+      Flask • Python • NLP • VADER • Transformers<br>
+      HTML • CSS • AJAX • Rate Limiting
+    </p>
+  </div>
+</section>
+
+<!-- TRUST LINE -->
+<div class="trust">
+  Built for real-world NLP use cases • Internship & Resume Ready
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  Built by Shadullah • AI Sentiment Analysis Platform
+</footer>
+
+<script>
+document.getElementById("analyzeBtn").addEventListener("click", async () => {
+  const text = document.getElementById("textInput").value.trim();
+  const resultCard = document.querySelector(".result-card");
+
+  if (!text) return;
+
+  try {
+    const res = await fetch("/api/analyze", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text })
+    });
+
+    const data = await res.json();
+
+    resultCard.innerHTML = `
+    <h2>Analysis Result</h2>
+
+    <div class="sentiment-box ${data.sentiment.toLowerCase()}">
+      <div class="sentiment-header">
+        <span class="emoji">${data.emoji}</span>
+        <span class="sentiment-text">${data.sentiment}</span>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <span>Polarity</span>
+          <strong>${data.polarity}</strong>
+        </div>
+
+        <div class="stat">
+          <span>Confidence</span>
+          <strong>${data.confidence}%</strong>
+        </div>
+      </div>
+
+      <div class="confidence-bar" style="--confidence:${data.confidence}%">
+        <div class="fill"></div>
+      </div>
+    </div>
+  `;
+
+  } catch {
+    resultCard.innerHTML = "<p class='muted'>Error analyzing sentiment.</p>";
+  }
+});
+</script>
+
+</body>
+</html>

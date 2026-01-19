@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>API | AI Sentiment Analysis</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="nav-logo">AI Sentiment</div>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/how-it-works">How It Works</a></li>
+    <li><a href="/api-docs">API</a></li>
+    <li><a href="/about">About</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <h1>API Usage & Analytics</h1>
+  <p>REST API design with performance and rate-limiting insights.</p>
+</section>
+
+<section class="info">
+
+  <div class="info-box">
+    <h3> Endpoint</h3>
+    <code>POST /api/analyze</code>
+  </div>
+
+  <div class="info-box">
+    <h3> API Usage Pattern</h3>
+    <canvas id="apiChart"></canvas>
+  </div>
+
+  <div class="info-box">
+    <h3> Rate Limit Visualization</h3>
+    <canvas id="rateChart"></canvas>
+  </div>
+
+  <div class="info-box">
+    <h3> Security</h3>
+    <p>
+      Rate limiting prevents abuse and ensures fair usage
+      across users.
+    </p>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p>Scalable API • Production Oriented</p>
+</footer>
+
+<script>
+new Chart(document.getElementById("apiChart"), {
+  type: "line",
+  data: {
+    labels: ["Mon","Tue","Wed","Thu","Fri"],
+    datasets: [{
+      label: "Requests",
+      data: [120, 180, 150, 220, 300],
+      borderColor: "#38bdf8",
+      fill: false
+    }]
+  }
+});
+
+new Chart(document.getElementById("rateChart"), {
+  type: "pie",
+  data: {
+    labels: ["Used", "Remaining"],
+    datasets: [{
+      data: [65, 35],
+      backgroundColor: ["#ef4444", "#22c55e"]
+    }]
+  }
+});
+</script>
+
+</body>
+</html>
