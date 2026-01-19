@@ -1,7 +1,31 @@
+# Core
+python-dotenv
+requests
+
+# Data Analysis
+numpy<2
 pandas
-numpy
 matplotlib
 seaborn
+
+# Machine Learning
 scikit-learn
+joblib
+
+# NLP & AI
+vaderSentiment
+transformers
+torch
+
+# Web & Backend
 flask
-textblob
+flask-limiter
+flask-login
+jinja2
+
+# Visualization
+plotly
+chart.js
+
+# Utilities
+tqdm

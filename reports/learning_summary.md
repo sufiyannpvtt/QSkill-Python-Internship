@@ -1,0 +1,5 @@
+- Learned data preprocessing & visualization
+- Built ML pipelines
+- Developed REST APIs
+- Integrated NLP models
+- Improved project structuring skills

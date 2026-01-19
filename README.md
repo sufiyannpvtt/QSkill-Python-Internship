@@ -1,102 +1,73 @@
-## Overview
+# QSkill Python Internship – Professional Projects
 
-This repository contains all the work completed during my 1-month Python Development Internship at QSkill.  
-The internship focused on data analysis, machine learning, and web application development, following industry-standard project structuring and documentation practices.
+A complete, industry-level Python internship repository containing
+end-to-end projects in **Data Analysis, Machine Learning, and AI/NLP**.
 
-## Skills & Technologies
+This repository demonstrates real-world problem solving, clean project
+structure, and production-ready practices.
 
-- Programming: Python
-- Data Analysis: Pandas, NumPy
-- Visualization: Matplotlib, Seaborn
-- Machine Learning: Scikit-learn
-- Web Development: Flask
-- NLP: TextBlob
-- Tools: Git, GitHub
+## Projects Overview
 
----
+### Project 1: Data Analysis with Pandas
+
+- Exploratory Data Analysis (EDA)
+- Data cleaning & preprocessing
+- Visual insights & reporting
+- CSV-based real-world dataset
+
+`projects/01_Data_Analysis_Pandas`
+
+### Project 2: House Price Prediction (ML)
+
+- End-to-end ML pipeline
+- Data preprocessing & splitting
+- Linear Regression, Ridge & Lasso
+- Model evaluation & visualization
+
+`projects/02_House_Price_Prediction`
+
+### Project 3: AI Sentiment Analysis (Flask + NLP)
+
+- REST API for sentiment analysis
+- NLP using VADER & Transformers
+- Interactive web UI
+- Rate limiting & secure design
+
+`projects/03_Sentiment_Analysis_Flask`
+
+## Tech Stack
+
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Flask
+- NLP (VADER, Transformers)
+- HTML, CSS, JavaScript
+- Chart.js & Plotly
 
 ## Repository Structure
 
 QSkill-Python-Internship/
-├── reports/ # Internship report & learning logs
-├── datasets/ # Raw & processed datasets
-├── notebooks/ # EDA & ML experiments
-├── projects/ # Core internship projects
-├── screenshots/ # Output & UI screenshots
-└── submission/ # Final submission details
+├── projects/
+├── reports/
+├── notebooks/
+├── screenshots/
+├── submission/
+├── requirements.txt
+├── README.md
+└── CONTRIBUTING.md
 
-# Projects Completed
+## Learning Outcomes
 
-1. Data Analysis using Pandas & Matplotlib
+- Data analysis & visualization
+- Machine learning pipeline design
+- API development with Flask
+- NLP & sentiment analysis
+- Clean project structuring
+- Industry-standard documentation
 
-Objective:
-Analyze CSV data, compute statistics, visualize trends, and derive insights.
+## Author
 
-Key Highlights:
-
-Data cleaning & preprocessing
-
-Statistical analysis
-
-Bar chart, scatter plot & heatmap visualizations
-
-Insight documentation
-
-2. House Price Prediction (Machine Learning)
-
-Objective:
-Build a Linear Regression model to predict house prices based on features.
-
-Key Highlights:
-
-Data preprocessing
-
-Train/Test split
-
-Model training & evaluation
-
-Prediction visualization
-
-3. Sentiment Analysis Web App (Flask)
-
-Objective:
-Develop a web application that classifies user text as Positive, Negative, or Neutral.
-
-Key Highlights:
-
-Flask backend
-
-NLP using TextBlob
-
-Polarity & subjectivity scoring
-
-Clean UI with HTML & CSS
-
-Learning Outcomes
-
-Understood real-world Python project structuring
-
-Hands-on experience with data analysis & ML
-
-Built and documented a Flask web application
-
-Improved problem-solving & debugging skills
-
-Learned professional GitHub practices
-
-# Setup Instructions
-
-git clone <https://github.com/sufiyannpvtt/QSkill-Python-Internship.git>
-cd QSkill-Python-Internship
-pip install -r requirements.txt
-
-Author
-
-Mohammad Shadullah
-Python Developer Intern
-
-Acknowledgement
-
-I would like to thank QSkill and Squarcell Resource India Pvt. Ltd. for providing this opportunity to enhance my technical skills through hands-on learning.
-
-If you found this repository useful, feel free to star it!
+**Shadullah**  
+Python | Machine Learning | NLP  
+Internship-ready Project.
